@@ -35,8 +35,8 @@
 
   &__arrow {
     position: absolute;
-    top: 98%;
-    left: 48%;
+    top: 96vh;
+    left: 42vw;
     height: 60px;
     width: 70px;
     align-items: center;
@@ -49,6 +49,7 @@
 
     &-item {
       color: black;
+      font-weight: bold;
       text-decoration: none;
       font-size: 22px;
     }
