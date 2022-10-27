@@ -1,0 +1,44 @@
+.our-clients {
+  background: linear-gradient(rgba(245, 245, 241, 0), $darkedBackground);
+
+  &__content {
+    padding: 160px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+
+    @include onTablet {
+      padding-bottom: 100px;
+      flex-direction: row;
+    }
+
+    & img {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    margin: 160px auto 14px;
+    @extend %h2;
+    color: $black;
+  }
+
+  &__text {
+    margin: 0 auto 60px;
+
+    @extend %text;
+
+    color: $blackLight;
+  }
+}

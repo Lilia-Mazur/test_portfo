@@ -1,0 +1,58 @@
+.our-servises {
+  &__title {
+    @extend %h2;
+    margin:160px 0 14px;
+  }
+
+  &__title--card {
+    @extend %h3;
+    color: $black;
+    margin-bottom: 14px;
+  }
+
+  &__subtitle {
+    @extend %text;
+    margin-bottom: 60px;
+  }
+
+  &__card {
+    border: 1px solid $black;
+    border-radius: 18px;
+    background-color: $lightBackground;
+    padding: 40px;
+
+    margin-bottom: 20px;
+
+    @include onDesktop {
+      margin: 0;
+    }
+  
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  &__text {
+    @extend %text;
+  }
+
+  &__icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 30px;
+
+    &--design {
+      background-image: url(../images/icon/cardDesign.svg);
+    }
+
+    &--branding {
+      background-image: url(../images/icon/cardBranding.svg);
+    }
+
+    &--logo {
+      background-image: url(../images/icon/cardLogo.svg);
+    }
+  }
+}

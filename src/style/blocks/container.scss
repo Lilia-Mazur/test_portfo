@@ -1,0 +1,9 @@
+.container {
+  padding: 0 30px;
+  max-width: 1450px;
+  margin: 0 auto;
+
+  @include onDesktop {
+    padding: 0 100px;
+  }
+}

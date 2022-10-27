@@ -1,0 +1,40 @@
+.subscription {
+  padding-bottom: 20px;
+  
+  &__text {
+    @extend %text;
+
+    color: $blackLight;
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+    border: 1px solid $black;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+
+    background-color: $lightButton;
+    @extend %text;
+  }
+
+  &__button {
+    cursor: pointer;
+    width: 100%;
+    height: 56px;
+    background-color: $lightButton;
+    border: 1px solid $black;
+    border-radius: 8px;
+    color: $blackLight;
+
+    @extend %buttonText;
+
+    &:hover {
+      background-color: $blueButton;
+      color: #FDFDFD;
+    }
+  }
+}

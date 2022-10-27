@@ -1,0 +1,20 @@
+.button {
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid $black;
+  border-radius: 18px;
+  background-color: $lightButton;
+  padding: 15px 50px;
+
+  @include onTablet {
+    padding: 20px 50px;
+  }
+
+  @extend %buttonText;
+  color: $black;
+
+  &:hover {
+    background-color: $blueButton;
+    color: #FDFDFD;
+  }
+}

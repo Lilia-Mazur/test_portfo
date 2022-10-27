@@ -1,0 +1,56 @@
+.header {
+  height: 100vh;
+  background-image: url(../images/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__navbar {
+    box-sizing: content-box;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px 30px 0;
+    max-width: 1700px;
+
+    @include onDesktop {
+      padding: 40px 40px 0;
+      height: 70px;
+    }
+  }
+
+  &__content {
+    display: block;
+    align-items: center;
+
+    position: relative;
+    top: 10vh;
+
+    @include onTablet {
+      display: flex;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 98%;
+    left: 48%;
+    height: 60px;
+    width: 70px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    &-item {
+      color: black;
+      text-decoration: none;
+      font-size: 22px;
+    }
+  }
+}
