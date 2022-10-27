@@ -2,7 +2,6 @@
   background: linear-gradient(rgba(245, 245, 241, 0), $darkedBackground);
 
   &__content {
-    padding: 160px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +28,7 @@
   }
 
   &__title {
-    margin: 160px auto 14px;
+    margin: 100px auto 14px;
     @extend %h2;
     color: $black;
   }
