@@ -36,6 +36,22 @@
   }
 }
 
+%h3 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 36px;
+  text-transform: capitalize;
+
+  @include onTablet {
+    font-size: 26px;
+  }
+  @include onDesktop {
+    font-size: 30px;
+  }
+}
+
 %text {
   font-family: "Work Sans", sans-serif;
   font-style: normal;
@@ -79,18 +95,12 @@
   }
 }
 
-%h3 {
-  font-family: 'Inter', sans-serif;
+%menu {
+  font-family: 'Work Sans', sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 36px;
-  text-transform: capitalize;
-
-  @include onTablet {
-    font-size: 26px;
-  }
-  @include onDesktop {
-    font-size: 30px;
-  }
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 218%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }

@@ -24,9 +24,31 @@
   }
 
   &__social {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+
+    @include onTablet {
+      width: 50%;
+    }
+  }
+
+  &__rights {
+    @extend %text;
+    font-size: 14px;
+    color: $black;
+
+    @include onTablet {
+      font-size: 16px;
+    }
+
+    @include onTablet {
+      font-size: 18px;
+    }
+
+    & a {
+      color: $black;
+    }
   }
 
   &__icon {
@@ -78,13 +100,7 @@
   }
 
   &__menu {
-    font-family: 'Work Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 218%;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    @extend %menu;
 
     display: flex;
     justify-content: space-evenly;
@@ -99,22 +115,29 @@
 
   &__email {
     &-link {
-      font-family: 'Work Sans', sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 110%;
-      color: $blackLight;
+      @extend %text;
 
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 110%;
+      color: $black;
       text-decoration: none;
+
       &:hover {
         color: $blueButton;
+      }
+
+      @include onTablet {
+        font-size: 22px;
       }
 
       @include onDesktop {
         font-size: 26px;
       }
 
+      @include onDesktopXL {
+        font-size: 32px;
+      }
     }
   }
 
